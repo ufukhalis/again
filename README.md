@@ -54,6 +54,7 @@ Besides, the exception based retry that you can also use the conditions like bel
 ```java
 Optional<Integer> maybeResult = Again.of(retryConfig, operation)
                 .withCondition(__ -> __ == 500)
+                .doOnEachRetry(t -> log.info(t))
                 .retry();
 ```
 
