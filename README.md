@@ -10,7 +10,7 @@ Firstly, you should add latest `Again` dependency to your project.
 <dependency>
     <groupId>io.github.ufukhalis</groupId>
     <artifactId>again</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -53,7 +53,7 @@ Besides, the exception based retry that you can also use the conditions like bel
 
 ```java
 Optional<Integer> maybeResult = Again.of(retryConfig, operation)
-                .condition(__ -> __ == 500)
+                .withCondition(__ -> __ == 500)
                 .retry();
 ```
 

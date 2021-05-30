@@ -6,7 +6,8 @@
 
     <groupId>io.github.ufukhalis</groupId>
     <artifactId>again</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
+    <name>again</name>
     <description>Simple Java Retry Library</description>
     <url>https://github.com/ufukhalis/again</url>
 

@@ -111,7 +111,7 @@ public class AgainTests {
 
         // when
         Optional<Integer> maybeResult = Again.of(retryConfig, operation)
-                .condition(__ -> __ == 500)
+                .withCondition(__ -> __ == 500)
                 .retry();
 
         // then
